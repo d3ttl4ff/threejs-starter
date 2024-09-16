@@ -1,0 +1,94 @@
+.point {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.point:hover .text {
+  opacity: 1;
+}
+
+.point.visible .label {
+  transform: scale(1, 1);
+}
+
+.point.hovered .dot {
+  transform: scale(1, 1);
+}
+
+.point.hovered .label {
+  opacity: 0;
+  transform: scale(0, 0);
+}
+
+.point.hovered .large-label {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+.point .dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  margin-top: -2px;
+  margin-left: -2px;
+  border-radius: 50%;
+  background: #ffffff;
+  transform: scale(0, 0);
+  transition: transform 0.3s;
+  will-change: transform;
+}
+
+.point .label {
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  transform: scale(0, 0);
+  opacity: 1;
+  transition: transform 0.3s, opacity 0.3s;
+  will-change: transform, opacity;
+}
+
+.point .large-label {
+  position: absolute;
+  top: -44px;
+  left: -44px;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  border: 2px dotted #ffffff;
+  transform: scale(0.5, 0.5);
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.3s;
+  will-change: transform, opacity;
+}
+
+.point .text {
+  position: absolute;
+  top: 50px;
+  /* left: -100px; */
+  width: 200px;
+  padding: 20px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 20px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  background-image: radial-gradient(
+    ellipse closest-side at center,
+    rgba(5, 7, 15, 0.65) 50%,
+    rgba(5, 7, 15, 0) 100%
+  );
+  background-size: 100% 100%;
+}
