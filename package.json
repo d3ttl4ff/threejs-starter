@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "update-deps": "npm install three@latest tweakpane@latest stats.js@latest gsap@latest && npm install --save-dev vite-plugin-restart@latest"
   },
   "devDependencies": {
     "vite": "^5.4.1",
@@ -14,7 +15,7 @@
   "dependencies": {
     "gsap": "^3.12.5",
     "stats.js": "^0.17.0",
-    "three": "^0.168.0",
+    "three": "^0.169.0",
     "tweakpane": "^4.0.4"
   }
 }

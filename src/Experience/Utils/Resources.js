@@ -77,4 +77,3 @@ export default class Resources extends EventEmitter {
     this.items[source.name] = file;
   }
 }
-
