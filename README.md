@@ -12,20 +12,6 @@ This is a boilerplate for vanilla three.js projects.
 |                [gsap](https://github.com/greensock/GSAP)                 |  3.12.5 `latest`  | GSAP (GreenSock Animation Platform), a JavaScript animation library for the modern web |
 | [vite-plugin-restart](https://www.npmjs.com/package/vite-plugin-restart) |  0.4.1 `latest`   |                       Custom files/globs to restart Vite server.                       |
 
-## `Folder Structure`
-
-```bash
-.
-└── src/
-    ├── Experience/
-    │   ├── Sources
-    │   ├── Utils
-    │   └── World
-    ├── style.css
-    ├── index.html
-    └── script.js
-```
-
 ## `Quick Start`
 
 ```bash
